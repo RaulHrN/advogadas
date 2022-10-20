@@ -1,0 +1,35 @@
+header{
+    width: 100%;
+}
+
+.header-contact, .header-contact div, .header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-contact{
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    gap: 2rem;
+    background-color: white;
+}
+
+.header-contact div{
+    gap: 0.6rem;
+}
+
+.header-nav{
+    padding: 0.5rem 10rem  0.5rem 5rem;
+    background-color: #6B3938;
+    justify-content: space-between;
+}
+
+.header-nav nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header-nav a {
+    color: white;
+}
