@@ -10,7 +10,7 @@ import { ServicePage } from './pages/servicePage/ServicePage';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header/> 
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
