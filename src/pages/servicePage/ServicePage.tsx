@@ -55,7 +55,7 @@ export const ServicePage = () => {
     }
 
     return (
-        <main className='service-page'>
+        <main className='service-page page'>
             <h1 className='page-title'>Serviços</h1>
 
             <section className='services'>
