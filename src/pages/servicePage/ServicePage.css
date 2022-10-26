@@ -1,51 +1,34 @@
-a {
-    text-decoration: none;
-}
-
 .service-page {
     background-color: #E3D4C6;
 }
 
-.page-title {
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 49px;
-    letter-spacing: 0.1em;
-    font-size: 40px;
-    padding: 50px;
-}
-
 .services {
+    width: 100%;
     display: flex;
-    /* align-items: center; */
-    justify-content: space-around;
-    margin-top: 50px;
-    gap: 8px;
-    padding: 4px;
+    justify-content: space-evenly;
 }
 
 .services-left {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .service-circle {
-    width: 160px;
-    height: 160px;
-    border-radius: 80px;
-    background-color: #fff;
-    
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    background-color: #ffffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.2rem;
 }
 
 .img-lg {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
 }
 
 .img-lg img {
@@ -54,44 +37,37 @@ a {
 }
 
 .services-right {
-    border-radius: 16px;
-    padding: 48px;
-    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: #ffffff;
 }
 
 .title-service-right {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .select-citys,
 .select-services {
     text-align: center;
-    padding: 16px 8px;
 }
 
-.select-services {
-    padding: 32px 0 64px 0;
-}
-
-.select-citys p,
-.select-services p {
-    padding: 12px;
-}
-
-.select-citys > .select-buttons-1, 
-.select-citys > .select-buttons-2,
-.select-services > .select-buttons-3 {
+.select-citys>.select-buttons-1,
+.select-citys>.select-buttons-2,
+.select-services>.select-buttons-3 {
     display: flex;
     justify-content: center;
-    gap: 24px;
-    padding: 32px 0;
+    gap: 1.2rem;
+    padding: 2rem 0;
 }
 
-.select-citys > .select-buttons-2 {
+.select-citys>.select-buttons-2 {
     padding: 0;
 }
 
@@ -100,8 +76,8 @@ a {
 .select-buttons-3 .btn {
     flex: 1;
     background-color: #E3D4C6;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 1rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -109,10 +85,10 @@ a {
 
 .btn-click {
     background-color: #6B3938;
-    color: #E3D4C6; 
+    color: #E3D4C6;
     flex: 1;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 1rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -122,22 +98,22 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 52px;
+    gap: 3rem;
 }
 
-.lawyer-contact > .details > .nameOAB {
+.nameOAB {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
     padding: 0 0 24px 0;
 }
 
-.lawyer-contact > .details > .nameOAB > p {
-    font-size: 24px;
+.nameOAB p {
+    font-size: 1.2rem;
 }
 
-.lawyer-contact > .details > .nameOAB > span {
-    font-size: 14px;
+.nameOAB span {
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -148,7 +124,7 @@ a {
 }
 
 .whatsapp span {
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #000;
 }
 

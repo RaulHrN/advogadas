@@ -55,33 +55,33 @@ export const ServicePage = () => {
     }
 
     return (
-        <main className='service-page'>
+        <main className='service-page page'>
             <h1 className='page-title'>Serviços</h1>
 
             <section className='services'>
                 <div className="services-left">
                     <div className='service-circle'>
                         <figure className='img-lg'>
-                            <img src={iconContratual} alt="Icone de folha contratual" />
+                            <img src={iconContratual} alt="Contratual" />
                         </figure>
                         Contratual
                     </div>
 
                     <div className='service-circle'>
                         <figure className='img-lg'>
-                            <img src={iconPenal} alt="Icone de danos penais" />
+                            <img src={iconPenal} alt="Penal" />
                         </figure>
                         Penal
                     </div>
                     <div className='service-circle'>
                         <figure className='img-lg'>
-                            <img src={iconTributaria} alt="Icone de tributos (balança)" />
+                            <img src={iconTributaria} alt="Tributária" />
                         </figure>
                         Tributária
                     </div>
                     <div className='service-circle'>
                         <figure className='img-lg'>
-                            <img src={iconConsumidor} alt="Icone busto de uma pessoa" />
+                            <img src={iconConsumidor} alt="Consumidor" />
                         </figure>
                         Consumidor
                     </div>
