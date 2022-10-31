@@ -94,47 +94,8 @@
     cursor: pointer;
 }
 
-.lawyer-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.nameOAB {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 0 24px 0;
-}
-
-.nameOAB p {
-    font-size: 1.2rem;
-}
-
-.nameOAB span {
-    font-size: 1rem;
-    font-style: italic;
-}
-
-.whatsapp {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.whatsapp span {
-    font-size: 0.8rem;
-    color: #000;
-}
-
-.numberWhataspp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    cursor: pointer;
-    color: #000;
+.space {
+    height: 30%;
 }
 
 @media screen and (max-width: 1060px) {

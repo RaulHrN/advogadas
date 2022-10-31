@@ -20,10 +20,8 @@ export const AboutUsPage = () => {
 
       <div className="main-section">
         {dataLawyers.lawyers.map((lawyer) => {
-          console.log(lawyer);
-          return <LawyerCard name={lawyer.name} oab={lawyer.oab} resume={lawyer.resume} whatsapp={lawyer.whatsapp} number={lawyer.number} email={lawyer.email} left={lawyer.id === 2 ? true : false } />
-        })}
-        
+          return <LawyerCard name={lawyer.name} oab={lawyer.oab} resume={lawyer.resume} whatsapp={lawyer.whatsapp} number={lawyer.number} email={lawyer.email} left={lawyer.id === 1 ? true : false } />
+        })}    
       </div>
     </section>
   );

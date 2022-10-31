@@ -5,13 +5,15 @@ import iconPrevidenciario from "../../assets/icon_previdenciario.png";
 import iconFamilia from "../../assets/icon_familia.png";
 import iconTrabalhista from "../../assets/icon_trabalhista.png";
 import iconCivel from "../../assets/icon_civel.png";
-import iconWhatsapp from "../../assets/icon_whatsapp.png";
+import { LawyerCardService } from "../../components/lawyerCardService/LawyerCardService";
+import { getData } from "../../services/dataCVLawyers";
 
 export const ServicePage = () => {
   const [city, setCity] = useState("");
   const [service, setService] = useState("");
-  const [numberPhone, setNumberPhone] = useState("");
-
+  
+  const lawyers = getData().lawyers;
+  
   const controlClassElementSelect = (element: string) => {
     const elements = document.querySelectorAll(element);
 
@@ -41,14 +43,23 @@ export const ServicePage = () => {
     }
   };
 
-  const handleGoWhatsapp = (e: HTMLAnchorElement) => {
-    if (service !== "" && city !== "") {
-      const apiWhatsapp = `https://api.whatsapp.com/send?phone=${numberPhone}&text=Ol%C3%A1!%20Preciso%20de%20um%20Advogado%20${service}%20em%20${city}!%20Pode%20me%20dar%20mais%20informa%C3%A7%C3%B5es,%20por%20favor?`;
-      e.href = apiWhatsapp;
-    } else {
-      alert("Selecione uma cidade e um serviço, por favor!!!");
+  const handleShowLawyer = function(service: string) {
+
+    if(service === "Previdenciário")
+      return <LawyerCardService city={city} service={service} lawyer={lawyers[0]} />
+    
+    if(service === "Família")
+      return <LawyerCardService city={city} service={service} lawyer={lawyers[1]} />
+    
+    if(service === "Civil")
+      return <LawyerCardService city={city} service={service} lawyer={lawyers[1]} />
+    
+    if(service === "Trabalhista") {
+      return lawyers.map(l => {
+        return <LawyerCardService key={l.id} city={city} service={service} lawyer={l}/>
+      });
     }
-  };
+  }
 
   return (
     <main className="service-page page">
@@ -77,9 +88,9 @@ export const ServicePage = () => {
           </div>
           <div className="service-circle">
             <figure className="img-lg">
-              <img src={iconCivel} alt="Civel" />
+              <img src={iconCivel} alt="Civil" />
             </figure>
-            Civel
+            Civil
           </div>
         </div>
 
@@ -148,7 +159,7 @@ export const ServicePage = () => {
                 target="blank"
                 className="btn"
                 onClick={(e) =>
-                  handleSelectService(" Previdenciário", e.currentTarget)
+                  handleSelectService("Previdenciário", e.currentTarget)
                 }
               >
                 Previdenciário
@@ -172,39 +183,15 @@ export const ServicePage = () => {
               <a
                 target="blank"
                 className="btn"
-                onClick={(e) => handleSelectService("Cível", e.currentTarget)}
+                onClick={(e) => handleSelectService("Civil", e.currentTarget)}
               >
-                Cível
+                Civil 
               </a>
             </div>
           </div>
-
-          <div className="lawyer-contact">
-            <figure>
-              <img src="" alt="Imagem da roberta advogada" />
-            </figure>
-
-            <div className="details">
-              <div className="nameOAB">
-                <p className="name">Roberta dos Santos </p>
-                <span className="oab">OAB-SP N°. 999.999</span>
-              </div>
-
-              <div className="whatsapp">
-                <a
-                  className="numberWhataspp"
-                  id="whatsapp"
-                  target="blank"
-                  onClick={(e) => handleGoWhatsapp(e.currentTarget)}
-                >
-                  <figure>
-                    <img src={iconWhatsapp} alt="Icone do whatsapp" />
-                  </figure>
-                  (99) 9 9999 - 9999
-                </a>
-              </div>
-            </div>
-          </div>
+          {
+            city != '' && service != '' ? handleShowLawyer(service) : <div className="space"></div>  
+					}
         </div>
       </section>
     </main>
