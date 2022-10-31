@@ -93,4 +93,8 @@
         max-width: 450px;
         padding: 1rem;
     }
+
+    .social {
+        flex-direction: column;
+    }
 }

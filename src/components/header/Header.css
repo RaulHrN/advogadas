@@ -49,3 +49,13 @@ header {
         width: 12rem;
     }
 }
+
+@media screen and (max-width: 520px) {
+    .header-logo {
+        width: 8rem;
+    }
+    
+    .header-nav nav {
+        gap: 2rem;
+    }
+}

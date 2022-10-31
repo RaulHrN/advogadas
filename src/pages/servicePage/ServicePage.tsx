@@ -190,7 +190,7 @@ export const ServicePage = () => {
             </div>
           </div>
           {
-            city != '' && service != '' ? handleShowLawyer(service) : <div className="space"></div>  
+            city !== '' && service !== '' ? handleShowLawyer(service) : <div className="space"></div>  
 					}
         </div>
       </section>

@@ -28,7 +28,7 @@ export function LawyerCardService(props: LawyerCardProps) {
 
     return (
         <div className="lawyer-contact">
-        <figure className="lawyer-photo">
+        <figure className="lawyer-photo-service">
             <img src={imagens[props.lawyer.id]} alt="Imagem da roberta advogada" />
         </figure>
 
