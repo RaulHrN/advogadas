@@ -38,7 +38,7 @@
 
 .services-right {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     flex-direction: column;
     border-radius: 1rem;
@@ -135,4 +135,36 @@
     gap: 10px;
     cursor: pointer;
     color: #000;
+}
+
+@media screen and (max-width: 1060px) {
+    .services {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .services-left {
+        max-width: 95%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .services-right {
+        max-width: 95%;
+        gap: 2rem;
+    }
+
+    .title-service-right {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .service-circle {
+        width: 8rem;
+        height: 8rem;
+        font-size: 0.8rem;
+    }
 }

@@ -17,18 +17,16 @@ footer {
     max-width: 600px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer-info-sec {
     max-width: 320px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 }
 
-.footer-info-sec h3{
+.footer-info-sec h3 {
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -39,4 +37,14 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+}
+
+@media screen and (max-width: 840px) {
+    .footer-info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
 }

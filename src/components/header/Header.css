@@ -1,26 +1,30 @@
-header{
+header {
     width: 100%;
 }
 
-.header-contact, .header-contact div, .header-nav{
+.header-contact, .header-contact div, .header-nav {
     display: flex;
     align-items: center;
 }
 
-.header-contact{
+.header-contact {
     padding: 0.5rem 0.5rem 0.5rem 2%;
     gap: 2rem;
     background-color: white;
 }
 
-.header-contact div{
+.header-contact div {
     gap: 0.6rem;
 }
 
-.header-nav{
+.header-nav {
     padding: 0.5rem 10%;
     background-color: #6B3938;
     justify-content: space-between;
+}
+
+.header-logo {
+    width: 18.75;
 }
 
 .header-nav nav {
@@ -32,4 +36,16 @@ header{
 
 .header-nav a {
     color: white;
+}
+
+@media screen and (max-width: 840px) {
+    .header-nav {
+        padding: 0.5rem 5%;
+        background-color: #6B3938;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        width: 12rem;
+    }
 }

@@ -1,0 +1,22 @@
+{
+    "lawyers": [
+        {
+            "id": 1,
+            "name": "Fernanda Zanon Costa",
+            "oab": "273.520",
+            "resume": "Advogada formada em 2007 pela USCS – Universidade Municipal de São Caetano do Sul, especialista em Direito Material e Processual do Trabalho e em Direito Previdenciário. Militante na área trabalhista e Previdenciária há cerca de 10 anos com vasta experiência tanto no contencioso como no consultivo. Atuação em escritórios renomados, tendo, pois, angariado conhecimento em todas as fases processuais, bem como na realização de relatórios diversos, acompanhamento de audiências e contato direto com clientes conceituados.",
+            "whatsapp": "https://wa.me/+5511992165622",
+            "number": "(11) 9 9216-5622",
+            "email": "fernanda@costavicentin.com.br"
+        },
+        {
+            "id": 2,
+            "name": "Caroline Campanha Vicentin",
+            "oab": "287.816",
+            "resume": "Advogada formada em 2008, pela Faculdade de Direito de São Bernardo do Campo, especialista em Direito Material e Processual do Trabalho e em Direito de Família e Sucessões. Vivência na área jurídica desde 2004, tendo iniciado em composição de departamentos pessoais e jurídicos internos de empresas, atuando como preposta. Após a formação e aprovação no exame de ordem, advogou para pessoas físicas e jurídicas, atuando tanto no consultivo, quanto no contencioso. Atuou também em carreira acadêmica, lecionando para turmas de Direito na Faculdade Anhanguera.",
+            "whatsapp": "https://wa.me/+5511992645057",
+            "number": "(11) 9 9264-5057",
+            "email": "caroline@costavicentin.com.br"
+        }
+    ]
+}
